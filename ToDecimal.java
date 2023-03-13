@@ -10,7 +10,7 @@ public class ToDecimal {
 
         for (int i = 1; i <= x.length(); i++) {
             if (x.charAt(x.length() - i) > '9') {
-                double temp = (x.toUpperCase().charAt(x.length() - i) - 55) * Math.pow(base, i - 1);
+                double temp = (x.toLowerCase().charAt(x.length() - i) - 87) * Math.pow(base, i - 1);
                 result = result.add(BigInteger.valueOf((long) temp));
             } else {
                 double temp = (x.charAt(x.length() - i) - 48) * Math.pow(base, i - 1);

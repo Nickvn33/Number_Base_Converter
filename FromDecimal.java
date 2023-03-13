@@ -15,7 +15,7 @@ public class FromDecimal {
             BigInteger temp;
             String digit;
             if (x.mod(bigBase).compareTo(BigInteger.TEN.subtract(BigInteger.ONE)) > 0) {
-                temp = x.mod(bigBase).add(new BigInteger(String.valueOf(55)));
+                temp = x.mod(bigBase).add(new BigInteger(String.valueOf(87)));
                 digit = new String(temp.toByteArray(), "UTF-8");
             } else {
                 temp = x.mod(bigBase);
